@@ -10,16 +10,18 @@
       padding: 0;
       height: 100%;
       width: 100%;
-      background-color: #111; /* fundo escuro pra ver contraste */
+      background-color: transparent; /* 🔹 fundo transparente */
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
     }
 
     #checkbox {
       max-width: 90%;
       max-height: 90%;
       object-fit: contain;
+      pointer-events: none; /* evita clique acidental */
     }
   </style>
 </head>
@@ -49,5 +51,3 @@
   </script>
 </body>
 </html>
-
-
